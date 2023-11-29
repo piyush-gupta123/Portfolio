@@ -79,13 +79,13 @@ export default function Intro() {
           Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a className="bg-white p-4 text-xl text-gray-700 flex items-center gap-2 rounded-full border-2 cursor-pointer outline-none focus:scale-110 hover:scale-110 hover:bg-white
-           active:scale-105 transition group">
+           active:scale-105 transition group" href="https://www.linkedin.com/in/piyush-gupta-563047239/" target="_blank">
           <BsLinkedin />
         </a>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full border-2
           text-[1.35rem] cursor-pointer outline-none focus:scale-110 hover:scale-110 hover:bg-white
-          active:scale-105 transition group"
+          active:scale-105 transition group" href="https://github.com/piyush-gupta123" target="_blank"
         >
           <BsGithub />
         </a>
