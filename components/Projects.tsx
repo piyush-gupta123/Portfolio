@@ -1,8 +1,21 @@
-import React from 'react'
-import SectionHeading from './section-heading'
+import React from "react";
+import SectionHeading from "./section-heading";
+import { projectsData } from "@/lib/data";
+import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <SectionHeading>My projects</SectionHeading>
-  )
+    <section id="projects" className="scroll-mt-28">
+      <SectionHeading>My projects</SectionHeading>
+      <div>
+        {projectsData.map((project, index) => (
+          <React.Fragment key={index}>
+            <ProjectCard {...project} />
+          </React.Fragment>
+        ))}
+      </div>
+    </section>
+  );
 }
+
+

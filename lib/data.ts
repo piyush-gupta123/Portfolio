@@ -62,25 +62,25 @@ export const Education = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "ByteBot",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Developed a Chatbot using python to provide you with a seamless and engaging conversation experience. This ChatBot is trained using PyTorch, a powerful deep learning framework, to understand and respond to user input in a human-like manner.",
+    tags: ["NLTK", "Pytorch", "Flask", "HTML", "CSS", "Javascript"],
     imageUrl: chatbot,
   },
   {
-    title: "rmtDev",
+    title: "Prompton",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: Travel_Diary,
+      "Prompton is a cutting-edge application built on top of Next.js, leveraging the power of server-side rendering (SSR) and React.js along with a powerful database,i.e, MongoDB. It can basically provide user the ability to create, update, delete short prompts for future use which are mainly asked to ChatGPT.",
+    tags: ["React", "Next.js", "Tailwind CSS", "MongoDB"],
+    imageUrl: Prompton,
   },
   {
-    title: "Word Analytics",
+    title: "Travel Diary",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: Prompton,
+      "The Travel Blog Project, built using ReactJS and NodeJS, is a dynamic and engaging platform that takes you on a digital journey to explore the world’s wonders. This project seamlessly combines the power of Front-end with the versatility of Back-end and Database to create an immersive travel experience.",
+    tags: ["React", "Nodejs", "MongoDB", "Tailwind CSS", "Redux"],
+    imageUrl: Travel_Diary,
   },
 ] as const;
 

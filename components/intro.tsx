@@ -10,7 +10,7 @@ import { HiDownload } from "react-icons/hi";
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-[60rem] text-center sm:mb-0">
+    <section className="mb-28 max-w-[60rem] text-center sm:mb-0 scroll-mt-[100rem]" id="home">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -53,7 +53,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello there! I'm Piyush Gupta</span>, a
-        recent graduate with a passion for exploring the vast world of computer
+        Final year Computer Science student with a passion for exploring the vast world of computer
         science. As a <span className="font-bold">budding professional</span> in
         the field, my journey has been fueled by a relentless curiosity for
         technology and a commitment to turning ideas into reality through code.
