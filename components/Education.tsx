@@ -13,7 +13,7 @@ import { useSectionInView } from "@/lib/hooks";
 export default function Education() {
   const { ref } = useSectionInView("Education");
   return (
-    <section id="education" ref={ref} className="mb-28">
+    <section id="education" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My Education</SectionHeading>
       <VerticalTimeline lineColor="">
         {EducationData.map((item, index) => (
