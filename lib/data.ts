@@ -1,6 +1,6 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+// import { CgWorkAlt } from "react-icons/cg";
+// import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import chatbot from "@/public/chatbot.png";
 import Travel_Diary from "@/public/Travel_Diary.png";
@@ -24,8 +24,8 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Education",
+    hash: "#education",
   },
   {
     name: "Contact",
@@ -33,30 +33,34 @@ export const links = [
   },
 ] as const;
 
-export const Education = [
+export const EducationData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    title: "High School",
+    institution: "Doon Public School",
+    location: "Haldwani, Uttarakhand",
+    percentage: "81%",
+    description: "I have completed my High School (10th).",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2017 - 2018",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    title: "Intermediate",
+    institution: "Doon Public School",
+    location: "Haldwani, Uttarakhand",
+    percentage: "75.4%",
+    description: "I have completed my Intermediate (12th).",
+    icon: React.createElement(LuGraduationCap),
+    date: "2019 - 2020",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Bachelor Of Technology",
+    institution: "Graphic Era University",
+    location: "Dehradun, Uttarakhand",
+    percentage: "89.6%",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I am a final year Computer Science student with specialization in Artificial Intelligence and Machine Learning.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2020 - Present",
   },
 ] as const;
 
@@ -103,5 +107,5 @@ export const skillsData = [
   "CyberSecurity",
   "Cloud Computing",
   "React Native",
-  "Java"
+  "Java",
 ] as const;
