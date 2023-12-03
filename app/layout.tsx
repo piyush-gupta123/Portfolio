@@ -6,6 +6,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/Footer";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import ThemeContextProvider from "@/context/ThemeContextProvider";
+import favicon from "@/public/favicon.ico"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +14,7 @@ export const metadata = {
   title: "Piyush Gupta | Portfolio",
   description:
     "Piyush Gupta, a fresher who wants to set foot in the IT industry to learn and grow.",
+  icons: [{rel: 'icon', url: favicon.src}]
 };
 
 export default function RootLayout({
