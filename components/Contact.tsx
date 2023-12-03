@@ -3,9 +3,10 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
-import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/serverActions/sendEmail";
+import SubmitBtn from "./submitBtn";
+import { toast } from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -29,16 +30,29 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="text-gray-700 -mt-6">
+      <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please Contact me at{" "}
         <a href="mailto:piyushgupta9758@gmail.com" className="underline">
           piyushgupta9758@gmail.com
         </a>{" "}
         or through this form
       </p>
-      <form action={async (formData)=>await sendEmail(formData)} className="mt-10 flex flex-col">
+      <form
+        action={async (formData) => {
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            toast.error(error);
+            return;
+          }
+
+          toast.success("Email Sent Successfully!!");
+        }}
+        className="mt-10 flex flex-col dark:text-black"
+      >
         <input
-          className="h-14 px-4 rounded-lg borderBlack"
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 
+          dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"
           required
@@ -46,20 +60,14 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 
+          dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Your message"
           required
           maxLength={5000}
         />
-        <button
-          type="submit"
-          className="group flex gap-2 items-center justify-center first-letter h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110
-          active:scale-105 hover:bg-gray-950 "
-        >
-          Submit{" "}
-          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:transalate-x-1 group-hover:-transalate-y-1 cursor-pointer" />{" "}
-        </button>
+        <SubmitBtn />
       </form>
     </motion.section>
   );

@@ -69,7 +69,7 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row gap-4 px-4 text-lg font-medium items-center justify-center"
+        className="flex flex-col sm:flex-row gap-5 px-4 text-lg font-medium items-center justify-center"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -79,7 +79,7 @@ export default function Intro() {
         <Link
           href="#contact"
           className="bg-gray-900 px-7 py-6 text-white flex items-center gap-2 rounded-full
-           text-2xl border-2 cursor-pointer outline-none focus:scale-110 hover:scale-110 hover:bg-gray-900
+           text-2xl cursor-pointer outline-none focus:scale-110 hover:scale-110 hover:bg-gray-900
            active:scale-105 transition group"
           onClick={() => {
             setActiveSection("Contact");
@@ -90,8 +90,8 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          className="bg-white text-xl px-7 py-6 flex items-center gap-2 border-2 rounded-full cursor-pointer outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
-           active:scale-105 transition group"
+          className="bg-white text-xl px-7 py-6 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
+           active:scale-105 transition group dark:bg-white/10 dark:text-white/60"
           href="/Resume.pdf"
           download
         >
@@ -99,17 +99,17 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a
-          className="bg-white p-4 text-xl text-gray-700 flex items-center gap-2 rounded-full border-2 cursor-pointer outline-none focus:scale-110 hover:scale-110 hover:bg-white
-           active:scale-105 transition group"
+          className="bg-white p-4 text-xl text-gray-700 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-110 hover:scale-110 hover:bg-white
+           active:scale-105 transition group dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/piyush-gupta-563047239/"
           target="_blank"
         >
           <BsLinkedin />
         </a>
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full border-2
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full
           text-[1.35rem] cursor-pointer outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
-          active:scale-105 transition group"
+          active:scale-105 transition group dark:bg-white/10 dark:text-white/60"
           href="https://github.com/piyush-gupta123"
           target="_blank"
         >
