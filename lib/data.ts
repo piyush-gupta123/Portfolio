@@ -1,6 +1,5 @@
 import React from "react";
-// import { CgWorkAlt } from "react-icons/cg";
-// import { FaReact } from "react-icons/fa";
+import Prism_Connect from "@/public/Prism_Connect.jpg";
 import { LuGraduationCap } from "react-icons/lu";
 import chatbot from "@/public/chatbot.png";
 import Travel_Diary from "@/public/Travel_Diary.png";
@@ -80,10 +79,17 @@ export const projectsData = [
     imageUrl: Prompton,
   },
   {
+    title: "Prism Connect",
+    description:
+      "The Prism Connect is a cutting-edge mobile application that re-imagines the way we connect and collaborate in a virtual world. This project harnesses the power of React Native to deliver a seamless and intuitive video conferencing experience.",
+    tags: ["React Native", "Node.js", "Express", "Socket.io"],
+    imageUrl: Prism_Connect,
+  },
+  {
     title: "Travel Diary",
     description:
       "The Travel Blog Project, built using ReactJS and NodeJS, is a dynamic and engaging platform that takes you on a digital journey to explore the world’s wonders. This project seamlessly combines the power of Front-end with the versatility of Back-end and Database to create an immersive travel experience.",
-    tags: ["React", "Nodejs", "MongoDB", "Tailwind CSS", "Redux"],
+    tags: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Redux"],
     imageUrl: Travel_Diary,
   },
 ] as const;
