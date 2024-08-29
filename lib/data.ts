@@ -56,11 +56,11 @@ export const EducationData = [
     title: "Bachelor Of Technology",
     institution: "Graphic Era University",
     location: "Dehradun, Uttarakhand",
-    percentage: "89.6%",
+    CGPA: "8.89",
     description:
-      "I am a final year Computer Science student with specialization in Artificial Intelligence and Machine Learning.",
+      "I have completed my graduation in Computer Science with specialization in Artificial Intelligence and Machine Learning from Graphic Era University.",
     icon: React.createElement(LuGraduationCap),
-    date: "2020 - Present",
+    date: "2020 - 2024",
   },
 ] as const;
 
