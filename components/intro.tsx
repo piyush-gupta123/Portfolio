@@ -61,7 +61,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello there! I'm Piyush Gupta</span>, a
-        Final year Computer Science student with a passion for exploring the
+        recent Computer Science graduate (2024) with a passion for exploring the
         vast world of computer science. As a{" "}
         <span className="font-bold">budding professional</span> in the field, my
         journey has been fueled by a relentless curiosity for technology and a

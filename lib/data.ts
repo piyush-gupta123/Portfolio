@@ -4,6 +4,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import chatbot from "@/public/chatbot.png";
 import Travel_Diary from "@/public/Travel_Diary.png";
 import Prompton from "@/public/Prompton.png";
+import toursync from "@/public/toursync.png";
 
 export const links = [
   {
@@ -65,6 +66,13 @@ export const EducationData = [
 
 export const projectsData = [
   {
+    title: "TourSync",
+    description:
+      "This Travel and Tourism Management System, built with Java and Swing, streamlines booking and management of travel packages and hotel reservations. Key features include secure user authentication, a user-friendly booking interface, and seamless payment gateway integration. It offers an efficient solution for planning and managing travel experiences.",
+    tags: ["Java", "Swing", "SQL"],
+    imageUrl: toursync,
+  },
+  {
     title: "ByteBot",
     description:
       "Developed a Chatbot using python to provide you with a seamless and engaging conversation experience. This ChatBot is trained using PyTorch, a powerful deep learning framework, to understand and respond to user input in a human-like manner.",
@@ -79,19 +87,20 @@ export const projectsData = [
     imageUrl: Prompton,
   },
   {
-    title: "Prism Connect",
-    description:
-      "The Prism Connect is a cutting-edge mobile application that re-imagines the way we connect and collaborate in a virtual world. This project harnesses the power of React Native to deliver a seamless and intuitive video conferencing experience.",
-    tags: ["React Native", "Node.js", "Express", "Socket.io"],
-    imageUrl: Prism_Connect,
-  },
-  {
     title: "Travel Diary",
     description:
       "The Travel Blog Project, built using ReactJS and NodeJS, is a dynamic and engaging platform that takes you on a digital journey to explore the world’s wonders. This project seamlessly combines the power of Front-end with the versatility of Back-end and Database to create an immersive travel experience.",
     tags: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Redux"],
     imageUrl: Travel_Diary,
   },
+  {
+    title: "Prism Connect",
+    description:
+      "The Prism Connect is a cutting-edge mobile application that re-imagines the way we connect and collaborate in a virtual world. This project harnesses the power of React Native to deliver a seamless and intuitive video conferencing experience.",
+    tags: ["React Native", "Node.js", "Express", "Socket.io"],
+    imageUrl: Prism_Connect,
+  },
+  
 ] as const;
 
 export const skillsData = [
