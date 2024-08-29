@@ -19,10 +19,10 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-5 text-xl">
-        Welcome to my portfolio! I am a final year college student pursuing a{" "}
+        Welcome to my portfolio! I am a recent graduate of{" "}
         <span className="font-bold">
           Bachelor's degree in Computer Science with specialization in Machine
-          Learning and Artificial Intelligence
+          Learning and Artificial Intelligence in 2024
         </span>
         . Throughout my academic journey, I have developed a strong foundation
         in the principles and applications of cutting-edge technologies that
